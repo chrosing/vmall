@@ -5,6 +5,7 @@ import cn.nasity.common.service.UserService;
 import cn.nasity.provider.mapper.UserMapper;
 import com.alibaba.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * @date : 2019/8/13
  */
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired

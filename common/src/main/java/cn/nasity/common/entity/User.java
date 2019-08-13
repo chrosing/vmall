@@ -26,7 +26,7 @@ public class User implements Serializable{
     /**
      * 用户性别
      */
-    private Integer sex;
+    private Integer userSex;
 
     /**
      * 密码

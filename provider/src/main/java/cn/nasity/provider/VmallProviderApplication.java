@@ -20,7 +20,7 @@ public class VmallProviderApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(VmallProviderApplication.class, args);
-		System.out.println("服务端启动成功！！！");
+		System.out.println("提供者启动成功！！！");
 		try {
 			System.in.read();
 		} catch (IOException e) {
