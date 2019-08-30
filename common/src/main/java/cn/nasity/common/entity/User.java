@@ -14,11 +14,6 @@ import java.io.Serializable;
 public class User implements Serializable{
 
     /**
-     * Id
-     */
-    private String id;
-
-    /**
      * 用户姓名
      */
     private String userName;
