@@ -13,10 +13,6 @@ import java.io.Serializable;
 @Data
 public class User implements Serializable{
 
-    /**
-     * Id
-     */
-    private String id;
 
     /**
      * 用户姓名
