@@ -1,0 +1,10 @@
+1.Spring全家桶
+2.mybatis or jpa or jooq 共存 
+3.maven
+4.mysql(试着读写分离) 
+6.JK(Jenkins) 
+7.SOA(dubbo+zk) 
+8.kafka(消息队列) 
+9.redis(登录验证和单点登录) 
+10.MongoDB(日志监控)
+11.Shiro(JWT或者SpringSecurity) 

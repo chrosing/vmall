@@ -1,12 +1,12 @@
 package cn.nasity.common.utils;
 
+import cn.nasity.common.exception.BeanUtilsException;
 import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.beans.BeansException;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
-import run.halo.app.exception.BeanUtilsException;
 
 import java.beans.PropertyDescriptor;
 import java.util.*;

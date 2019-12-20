@@ -18,14 +18,9 @@ import java.io.IOException;
 @MapperScan("mapper")
 public class VmallProviderApplication {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		SpringApplication.run(VmallProviderApplication.class, args);
 		System.out.println("提供者启动成功！！！");
-		try {
-			System.in.read();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 
 }
