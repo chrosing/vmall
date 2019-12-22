@@ -10,14 +10,15 @@
     <dubbo:application name="provider"/>
     <!-- 注册中心的ip地址 -->
     <dubbo:registry address="zookeeper://139.224.22.52:2181"/>
-    <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
-    <dubbo:annotation package="service.impl"/>
-
     <!-- use dubbo protocol to export service on port 20880 -->
     <dubbo:protocol name="dubbo" port="20880"/>
 
-    <!-- service implementation, as same as regular local bean -->
-    <bean id="userService" class="cn.nasity.provider.service.impl.UserServiceImpl"/>
-    <!-- declare the service interface to be exported -->
-    <dubbo:service interface="cn.nasity.common.service.UserService" ref="userService"/>
+
+    <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
+    <dubbo:annotation package="cn.nasity.provider.service.impl"/>
+
+    <!--&lt;!&ndash; service implementation, as same as regular local bean &ndash;&gt;-->
+    <!--<bean id="userService" class="cn.nasity.provider.service.impl.UserServiceImpl"/>-->
+    <!--&lt;!&ndash; declare the service interface to be exported &ndash;&gt;-->
+    <!--<dubbo:service interface="cn.nasity.common.service.UserService" ref="userService"/>-->
 </beans>

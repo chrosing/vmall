@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
  * @date : 2019/7/28
  */
 @SpringBootApplication
-@ImportResource({"classpath:spring-dubbo.xml"})
+@ImportResource({"classpath:spring-customer-dubbo.xml"})
 public class VmallCustomerApplication {
 
 	public static void main(String[] args) {

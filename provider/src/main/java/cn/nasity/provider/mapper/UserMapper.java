@@ -16,11 +16,6 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    @Results(id = "userMap", value = {
-            @Result(column = "id", property = "id"),
-            @Result(column = "userName", property = "userName"),
-            @Result(column = "userSex", property = "userSex"),
-            @Result(column = "password", property = "password")})
     @Select("SELECT * FROM v_user")
     List<User> findAllUser();
 }

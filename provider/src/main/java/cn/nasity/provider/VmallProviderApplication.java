@@ -5,8 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
-import java.io.IOException;
-
 /**
  * vmall项目启动器
  * @author Kaisec_Cao
@@ -14,7 +12,7 @@ import java.io.IOException;
  * @date : 2019/7/28
  */
 @SpringBootApplication
-@ImportResource({"classpath:spring-dubbo.xml"})
+@ImportResource({"classpath:spring-provider-dubbo.xml"})
 @MapperScan("mapper")
 public class VmallProviderApplication {
 
