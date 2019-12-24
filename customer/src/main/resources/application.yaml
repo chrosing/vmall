@@ -1,11 +1,11 @@
 server:
-  port: 8090
+  port: 8099
   servlet:
     context-path: /
 spring:
   datasource:
     name: test
-    url: jdbc:mysql://127.0.0.1:3306/springbootdubbo
+    url: jdbc:mysql://localhost:3306/springbootdubbo
     username: root
     password: 123456
     # 使用druid数据源

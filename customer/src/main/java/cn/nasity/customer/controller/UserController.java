@@ -22,6 +22,7 @@ public class UserController {
     @GetMapping
     public String findAllUser() {
         User user = userService.findUser();
+        System.out.println(user.getUserName());
         return user.getUserName();
     }
 }

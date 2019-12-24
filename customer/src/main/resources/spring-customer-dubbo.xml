@@ -10,8 +10,9 @@
     <dubbo:application name="consumer"/>
     <dubbo:registry address="zookeeper://139.224.22.52:2181"/>
     <dubbo:protocol name="dubbo" port="20880"/>
+    <dubbo:annotation package="controller"/>
 
-    <!-- 自动注入 -->
-    <dubbo:annotation package="cn.nasity.customer.controller"/>
+    <!-- 接口地址 -->
+    <dubbo:reference id="userService" check="false" interface="cn.nasity.common.service.UserService"/>
 
 </beans>

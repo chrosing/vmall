@@ -20,7 +20,6 @@
 		<module>customer</module>
 		<!--  服务提供者工程-->
 		<module>provider</module>
-		@Columnp
 		<!-- 主要放实体、接口、也可以放一些公用的工具类工程-->
 		<module>common</module>
 	</modules>
