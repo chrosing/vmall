@@ -14,12 +14,14 @@ import java.util.List;
  * @version : 1.0
  * @date : 2019/8/13
  */
-@Service
 @Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    private UserMapper userMapper;
+    private final UserMapper userMapper;
+
+    public UserServiceImpl(UserMapper userMapper){
+        this.userMapper = userMapper;
+    }
 
     /**
      * 查询用户
